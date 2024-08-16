@@ -1,0 +1,64 @@
+:root {
+    --color-red: #e53935;
+    --color-orange: #f57c00;
+    --color-yellow: #fbc02d;
+    --color-green: #43a047;
+    --color-blue: #1e88e5;
+    --color-purple: #8e24aa;
+  }
+  
+  /* Estiliza o contêiner principal do conversor */
+  .currency-converter {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, var(--color-red), var(--color-orange), var(--color-yellow), var(--color-green), var(--color-blue), var(--color-purple));
+    color: white;
+  }
+  
+  /* Estiliza os títulos */
+  .currency-converter h1, .currency-converter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estiliza os rótulos dos campos */
+  .currency-converter label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estiliza os campos de entrada e seleção */
+  .currency-converter input[type="number"], 
+  .currency-converter select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* Estiliza o botão de conversão */
+  .currency-converter button {
+    background-color: var(--color-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Adiciona um efeito de foco aos campos de entrada e seleção */
+  .currency-converter input[type="number"]:focus,
+  .currency-converter select:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+  }
